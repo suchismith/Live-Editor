@@ -1,0 +1,47 @@
+
+
+<html>
+    <head>
+      <title>Real Time Code editor</title>
+    <link rel="stylesheet" type="text/css" href="editorstyle.css">
+    <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+    </head>
+
+    <body>
+      <div id="welcome">
+        <center>
+        <h1> Real time Code editor</h1>
+          <h2>Enter code in the left pane</h2>
+      </center>
+      </div>
+
+      <div id="leftpane">
+     
+         <textarea id="inputcode" onkeyup="loadcode()">
+           
+         </textarea> 
+      </div>
+      <div id="rightpane">
+    <iframe id="liveeditor">
+    </iframe>
+      </div>
+
+      <div id="buttonpane">
+
+          <button type="button" class="btn btn-success" onclick="clearcode()">Clear Code</button>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          <button type="button" class="btn btn-success" onclick="cleardisplay()">Clear display</button>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          <button type="button" class="btn btn-success" onclick="loadcode()">Run Code</button>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      </div>
+
+
+      <script src="editorscript.js"></script> 
+
+    </body>
+  </html>
+
